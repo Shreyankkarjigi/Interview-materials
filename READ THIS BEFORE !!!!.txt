@@ -1,0 +1,105 @@
+Basics of data struture
+
+1.What are data struture?
+
+A data structure is a data organization, management, and storage format that enables efficient access and modification. More precisely, a data structure is a collection of data values, the relationships among them, and the functions or operations that can be applied to the data.
+
+2.Why use data struture?
+
+For faster access to data,for efficient storage, keeping it organized.
+
+3.What is iterable object?
+
+Any object is called iterable if we can access individual objects from it, bascially iterating through the object.
+
+We iterate through object through loops.
+
+4. What are index values?
+
+Every element inside a iterbale object has a uniqiue  value called index, it refers to a position within an ordered data struture.
+
+5.What are ordered data struture.
+
+Ordered data structures store elements in sequence of their insertion.(tuples,lists)
+
+6.What are unordered data 
+
+Un-ordered data structure don't store data in order of their insertion (Sets,Dictionary)
+
+
+7.Indexing in data struture 
+
+consider a list of alphabets
+
+char=["a","b","c"]
+
+indexing in python starts from 0 
+
+so "a"=0 ,"b"=1,"c"=2 and so on
+
+Elements can be accessed by their index values for example
+
+char[0] will return "a"
+
+
+8.Concept of index ranges
+
+suppose we have a list of chars
+
+chars=[1,2,3,4,5,6,7]
+and we want elements from 1 to 4 only
+
+we use something calles as alicing
+
+concept of slicing
+
+[starting index:ending index -1]
+
+
+index ranges go from starting to ending - 1 index
+
+so if we want to access elements from 1 to 4 we will write something like this
+
+[0:5] this will go till index 0 to 4 thus giving elements from 1 to 4
+
+
+
+9.Concept of striding
+
+striding allows us to access elements in steps for example we have a list of numbers
+nums=[1,2,3,4,5,6] and we want to access every second element in it
+
+striding syntax
+
+[start:end:steps]
+
+print(nums[0:5:2])
+
+
+
+10.If you don't know the ending of a list/tuple/array you can use len() functions
+
+len() returns the lenght or total elements in the list
+
+we can re-write the previous case like this
+
+print(nums[0:len(nums):2])
+
+
+11.some concepts of slicing
+
+1.[:]  returns whole thing
+
+2.[0:] returns whole thing
+
+3.[-1] returns last element
+
+4.[:-1] returns elements from 0 to last element-1
+
+5.[::-1] reverses the list or any other object like tuples,strings etc.
+
+6.[::-1] reverses the list, prints every second element from reverses
+
+7.[-1:0]  returns nothing
+
+8.[:3] by default python adds a 0 at start
